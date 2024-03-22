@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <title>User</title>
+  
+  <style>
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .log-user {
+      border: solid black 1px;
+      height: auto;
+      width: 300px;
+      background-color: transparent;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+      border: none;
+      
+    }
+    
+    form {
+      display: block;
+      box-sizing: border-box;
+      padding: 40px;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      display: flex;
+      gap: 5px;
+      
+    }
+    
+    h1 {
+      font-size: 30px;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+    
+    label {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-size: 10px;
+      padding-left: 20px;
+      
+    }
+    
+    input {
+      background-color: transparent;
+      border-radius: 15px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0px 20px;
+      border: none;
+      margin-bottom: 20px;
+      box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+      
+    }
+    
+    button {
+      height: 40px;
+      background-color: transparent;
+      box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+      border: none;
+      border-radius: 20px;
+      line-height: 40px;
+      margin: 10px 0px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    
+    button:hover {
+      background-color: black;
+      color: #E0E0E0;
+      transition: 1s ease-in-out;
+    }
+    
+    body {
+      background-color: #E0E0E0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    a {
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      color: red;
+      width: auto;
+      margin: 5px;
+      
+    }
+    
+    a:hover {
+      color: black;
+      transition: 0.5s;
+    }
+    
+    
+    
+    * {
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+    
+    p {
+      text-align: center;
+    }
+    
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+   
+    
+    details {
+      text-align: center;
+      margin: 5px;
+    }
+    
+    summary {
+      list-style: none;
+    }
+    
+  </style>
+  
+</head>
+
+<body>
+  
+  <div class = "container">
+  <div class="log-user">
+    <form id="Login">
+      <h1>User</h1>
+      <label for="username">Email</label>
+      <input type="email" required placeholder="Email" id="username">
+      <span id="usernameError" style="color: red;"></span>
+      <label for="password">Password</label>
+      <input type="password" required placeholder="Password" id="password">
+      <span id="passwordError" style="color: red;"></span>
+      <button type="submit">Login</button>
+      
+      <center>
+      <a href="forgotpass.html"><span>Forgot Password?</span></a>
+      </center>
+      
+      <p>Doesn't have account?<a href="signup.html"><span>Sign Up</span></a></p>
+      
+      
+      <details>
+        <summary>or</summary>
+        <a href="#"><img src = "images.png"</a>
+        <a href="#"><img src = "images1.png"</a>
+      </details>
+      
+    </form>
+  </div>
+  </div>
+  <script>
+    document.getElementById("Login").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      var user = document.getElementById("username").value;
+      var pass = document.getElementById("password").value;
+      
+      document.getElementById("usernameError").textContent = "";
+      
+      document.getElementById("passwordError").textContent = "";
+
+
+     if (username === "example" && password === "password") {
+          alert("Login successful!");
+     } else {
+      document.getElementById("usernameError").textContent = "Incorrect username.";
+      document.getElementById("passwordError").textContent = "Incorrect password.";
+            }
+    });
+  </script>
+  
+</body>
+
+</html>

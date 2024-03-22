@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <title>Sign up</title>
+  
+  <style>
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+   .sign-user {
+      border: solid black 1px;
+      height: auto;
+      width: 300px;
+      background-color: transparent;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+      border: none;
+    }
+    
+    form {
+      display: block;
+      box-sizing: border-box;
+      padding: 40px;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      display: flex;
+      gap: 5px;
+      
+    }
+    
+    h1 {
+      font-size: 30px;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+    
+    label {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-size: 10px;
+      padding-left: 20px;
+      
+    }
+    
+    input {
+      background-color: transparent;
+      border-radius: 15px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0px 20px;
+      border: none;
+      margin-bottom: 20px;
+      box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+      
+    }
+    
+    button {
+      height: 40px;
+      background-color: transparent;
+      box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+      border: none;
+      border-radius: 20px;
+      line-height: 40px;
+      margin: 10px 0px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    
+    button:hover {
+      background-color: black;
+      color: #E0E0E0;
+      transition: 1s ease-in-out;
+    }
+    
+    body {
+      background-color: #E0E0E0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    a {
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      width: auto;
+      margin: 5px;
+    }
+    
+    a:hover {
+      color: gray;
+      transition: 0.5s;
+    }
+    
+    span {
+      color: red;
+    }
+    
+    * {
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+    
+    p {
+      text-align: center;
+    }
+    
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    
+    details {
+      text-align: center;
+      margin: 5px;
+    }
+    
+    summary {
+      list-style: none;
+      font-weight: bold;
+    }
+    
+  </style>
+  
+</head>
+
+<body>
+  
+  <div class = "container">
+  <div class="sign-user">
+    <form action="">
+      <h1>Sign Up</h1>
+      <label for="user"></label>
+      <input type="text" id="user" required placeholder="Enter Your Username">
+      <label for="email"></label>
+      <input type="email" id="email" required placeholder="Enter Your Email">
+      <label for="pass"></label>
+      <input type="password" required placeholder="Enter Your Password">
+      <label for="pass"></label>
+      <input type="password" required placeholder="Confirm Password">
+  
+      <button type="submit">Sign Up</button>
+  
+      <details>
+        <summary>or</summary>
+        <a href="#"><img src="images.png" </a>
+          <a href="#"><img src="images1.png" </a>
+      </details>
+    </form>
+  </div>
+  </div>
+
+  
+</body>
+
+</html>

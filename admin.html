@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <title>Admin</title>
+  
+  <style>
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .log-admin {
+      border: solid black 1px;
+      height: 400px;
+      width: 300px;
+      background-color: transparent;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+      border: none;
+    }
+    
+    form {
+      display: block;
+      box-sizing: border-box;
+      padding: 40px;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      display: flex;
+      gap: 5px;
+      
+    }
+    
+    h1 {
+      font-size: 30px;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+    
+    label {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-size: 10px;
+      padding-left: 20px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    input {
+      background-color: #E0E0E0;
+      border-radius: 15px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0px 20px;
+      border: none;
+      margin-bottom: 20px;
+      box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+      
+    }
+    
+    button {
+      height: 40px;
+      background-color: transparent;
+      box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+      border: none;
+      border-radius: 20px;
+      line-height: 40px;
+      margin: 10px 0px;
+      font-weight: bold;
+    }
+    
+    button:hover {
+      background-color: black;
+      color: #E0E0E0;
+      transition: 1s ease-in-out;
+    }
+    
+    body {
+      background-color: #E0E0E0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    * {
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+    
+  </style>
+  
+</head>
+
+<body>
+  
+  <div class = "container">
+  <div class="log-admin">
+    <form>
+      <h1>Admin</h1>
+      <label for="Email">Email</label>
+      <input type="email" required placeholder="Email">
+      <label for="password">Password</label>
+      <input type="password" required placeholder="Password">
+      <button>Login</button>
+    </form>
+  </div>
+  </div>
+</body>
+
+</html>
